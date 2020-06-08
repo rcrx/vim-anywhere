@@ -1,12 +1,12 @@
-# vim-anywhere
+# vim-everywhere
 
-Sometimes, you edit text outside of Vim. These are sad times. Enter
-vim-anywhere!
+Sometimes, you edit text outside of Vim. These are sad times. Enter vim-everywhere, a fork of vim-anywhere!
+
+Includes all the functionality of the original with an additional binary (`bin/run2`) and launcher script (`script/vim-everywhere.sh`).
 
 ![demo](assets/demo.gif)
 
-Once [invoked](#keybinding), vim-anywhere will open a buffer. Close it and its
-contents are copied to your __clipboard__ and your previous application is
+Once [invoked](#keybinding), vim-anywhere will open a buffer. Close it and its contents are copied to your __clipboard__ and your previous application is
 refocused.
 
 ## Installation
@@ -104,3 +104,4 @@ pull request.**
 ## License
 
 MIT.
+
