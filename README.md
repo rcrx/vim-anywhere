@@ -4,6 +4,14 @@ Sometimes, you edit text outside of Vim. These are sad times. Enter vim-everywhe
 
 Includes all the functionality of the original with an additional binary (`bin/run2`) and launcher script (`script/vim-everywhere.sh`).
 
+- Linux only
+- Dependency: `xdotool`
+- Bind `$HOME/.vim-everywhere/script/vim-everywhere.sh` to a shortcut to invoke additional features.
+
+## Added Functionality
+
+vim-everywhere will cut text from the focussed application, paste it into a vim buffer and, upon saving and quitting, paste the modified contents of the buffer into the previously focussed field.
+
 ![demo](assets/demo.gif)
 
 Once [invoked](#keybinding), vim-anywhere will open a buffer. Close it and its contents are copied to your __clipboard__ and your previous application is
@@ -25,7 +33,7 @@ __Linux:__
 #### Install
 
 ```bash
-curl -fsSL https://raw.github.com/cknadler/vim-anywhere/master/install | bash
+sudo apt install xdotool && curl -fsSL https://raw.github.com/cknadler/vim-anywhere/master/install | bash
 ```
 
 #### Update
@@ -37,10 +45,10 @@ curl -fsSL https://raw.github.com/cknadler/vim-anywhere/master/install | bash
 #### Uninstall
 
 ```bash
-~/.vim-anywhere/uninstall
+~/.vim-everywhere/uninstall
 ```
 
-## Keybinding
+## vim-anywhere Keybinding
 
 __OSX:__ ( default = `ctrl+cmd+v` )
 
@@ -104,4 +112,3 @@ pull request.**
 ## License
 
 MIT.
-
